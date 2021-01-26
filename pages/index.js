@@ -4,10 +4,13 @@ import Card from '../components/card/card'
 import db from '../db.json'
 import Footer from '../components/footer/footer'
 import GitHubCorner from '../components/gitHubCorner/gitHubCorner'
+import IndexPage from '../components/indexPage/indexPage'
 
 
 export default function Home() {
   return (
+    <>
+    <IndexPage></IndexPage>
     <BackgroundQuiz>
       <QuizContainer>
         <Card>
@@ -32,5 +35,6 @@ export default function Home() {
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/omariosouto" />
     </BackgroundQuiz>
+    </>
   )
 }
