@@ -1,0 +1,48 @@
+{
+    "bg": "https://cdn.pling.com/img/a/3/6/f/a15f67c3e59725b23be2f282695ba5417a5d.png",
+    "title": "Quiz CSS da Alura",
+    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "questions": [
+      {
+        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+        "title": "Como fazer um seletor por id via CSS?",
+        "description": "Essa é pra aquecer",
+        "answer": 2,
+        "alternatives": [
+          ".elemento",
+          "*elemento",
+          "#elemento",
+          "%elemento"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "title": "Como fazer um background gradiente com css?",
+        "description": "Faz tempo em haha",
+        "answer": 0,
+        "alternatives": [
+           "background: linear-gradient(#e66465, #9198e5);",
+           "background: gradient(#e66465, #9198e5);"
+        ]
+      }
+    ],
+    "external": [
+      ""
+    ],
+    "theme": {
+      "colors": {
+        "background": "#282a36",
+        "Current Line": "#44475a",
+        "foreground": "#f8f8f2",
+        "comment": "#6272a4",
+        "cyan":"#8be9fd",
+        "green":"#50fa7b",
+        "orange":"#ffb86c",
+        "pink": "#ff79c6",
+        "purple": "#bd93f9",
+        "red":"#ff5555",
+        "yellow":"#f1fa8c"
+      },
+      "borderRadius": "4px"
+    }
+  }
