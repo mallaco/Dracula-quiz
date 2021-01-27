@@ -1,7 +1,7 @@
 {
     "bg": "https://cdn.pling.com/img/a/3/6/f/a15f67c3e59725b23be2f282695ba5417a5d.png",
     "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "description": "Teste os seus conhecimentos sobre o famoso vilão dos cinemas Dracula.",
     "imageIcon": "https://cdn.iconscout.com/icon/premium/png-512-thumb/dracula-229-1053870.png",
     "questions": [
       {
@@ -33,7 +33,7 @@
     "theme": {
       "colors": {
         "background": "#282a36",
-        "Current Line": "#44475a",
+        "CurrentLine": "#44475a",
         "foreground": "#f8f8f2",
         "comment": "#6272a4",
         "cyan":"#8be9fd",
