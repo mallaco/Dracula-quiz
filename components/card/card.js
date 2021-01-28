@@ -22,28 +22,6 @@ border-radius: 4px;
     line-height: 1;
     color: ${({ theme }) => theme.colors.foreground};
   }
-  input{
-    width: 100%;
-    padding: 15px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin: 10px 0 20px 0;
-    color: ${({ theme }) => theme.colors.foreground};
-    border: 1px solid ${({ theme }) => theme.colors.purple};
-    background-color: ${({ theme }) => theme.colors.background};
-  }
-  button{
-    width: 100%;
-    padding: 15px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    color: ${({ theme }) => theme.colors.foreground};
-    background-color: ${({ theme }) => theme.colors.purple};
-  }
-  button:disabled{
-    
-    background-color: ${({ theme }) => theme.colors.CurrentLine};
-  }
 
 `;
 
@@ -71,6 +49,24 @@ Card.Content = styled.div`
   ul {
     list-style: none;
     padding: 0;
+  }
+`;
+
+Card.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.purple}40`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: block;
+  
+  &:hover,
+  &:focus {
+    opacity: .5;
   }
 `;
 

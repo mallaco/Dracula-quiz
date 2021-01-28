@@ -10,10 +10,10 @@
         "description": "Essa é pra aquecer",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "teste1",
+          "teste2",
+          "teste3",
+          "teste4"
         ]
       },
       {
@@ -23,7 +23,9 @@
         "answer": 0,
         "alternatives": [
            "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "background: gradient(#e66465, #9198e5);",
+           "background: linear-gradient(#e66465, #9198e5);",
+           "background: linear-gradient(#e66465, #9198e5);"
         ]
       }
     ],

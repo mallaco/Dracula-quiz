@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
+import db from '../db.json';
 import BackgroundQuiz from '../components/backgroundQuiz/backgroundQuiz';
 import QuizContainer from '../components/quizContainer/quizContainer';
 import Card from '../components/card/card';
-import db from '../db.json';
 import Footer from '../components/footer/footer';
 import GitHubCorner from '../components/gitHubCorner/gitHubCorner';
+import Input from '../components/inputBase/InputBase';
+import Button from '../components/Button/button';
 
 export default function Home() {
 
@@ -24,17 +26,17 @@ export default function Home() {
               <p>{db.description}</p>
               <form onSubmit={
                 function (event) {
+                  //nao deixa com que o evento padrão faça a pagina recarregar
                   event.preventDefault();
                   router.push(`/quiz?name=${name}`);
                 }
               }>
-                <input
-                  onChange={function (event) {
-                    setName(event.target.value)
-                  }} 
-                  placeholder="Diga seu nome para jogar :)">
-                  </input>
-                <button type="submit" onChange="event.tag" disabled={name.length === 0}>Vamos Jogar {name} :)</button>
+                <Input placeholder="Diga seu nome para jogar :)"
+                  onChange={(event) => { setName(event.target.value) }}>
+                </Input>
+                <Button type="submit" onChange="event.tag" disabled={name.length === 0}>
+                  {`Vamos Jogar ${name} :)`}
+                </Button>
               </form>
             </Card.Content>
           </Card>
