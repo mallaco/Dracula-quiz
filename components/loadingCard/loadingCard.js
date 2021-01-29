@@ -1,5 +1,7 @@
 import Card from "../card/card";
 import react from 'react';
+import db from '../../db.json'
+//import gif from '../../images/loadindGif'; 
 
 export default function LoadingWidget() {
     return (
@@ -9,7 +11,7 @@ export default function LoadingWidget() {
         </Card.Header>
   
         <Card.Content>
-          [Desafio do Loading]
+          <img src={db.loadingGif} alt="gifLoading" width="100%" height="200px"></img>
         </Card.Content>
       </Card>
     );
